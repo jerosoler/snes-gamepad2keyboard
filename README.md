@@ -1,13 +1,16 @@
 # snes-gamepad2keyboard
 
+SNES USB gamepad emulate keyboard keys with 0 delay.
 
+Platforms like Stadia don't allow other controllers. But they allow keyboard so we can emulate the controller as if it were a keyboard.
 
-SNES USB gamepad emulate keyboard keys.
+It can also be used outside of a gaming platform.
 
 # Product emulate
 Test in https://gamepad-tester.com/
 - usb gamepad (Vendor: 0810 Product: e501)
-(https://github.com/jerosoler/snes-gamepad2keyboard/raw/master/docs/snesusb.jpg)
+
+![](https://github.com/jerosoler/snes-gamepad2keyboard/raw/master/docs/snesusb.jpg)
 
 # Installation
 
@@ -15,7 +18,7 @@ Test in https://gamepad-tester.com/
 git clone https://github.com/jerosoler/snes-gamepad2keyboard.git
 ```
 
-Require sudo
+Run with `sudo`
 ```
 cd  snes-gamepad2keyboard
 npm install
