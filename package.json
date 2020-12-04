@@ -1,7 +1,7 @@
 {
   "name": "snes-gamepad2keyboard",
   "version": "0.0.1",
-  "description": "SNES USB gamepad emulate keyboard",
+  "description": "SNES USB gamepad emulate keyboard keys",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
