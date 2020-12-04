@@ -1,12 +1,9 @@
 const HID = require('node-hid');
 const events = require('events');
 const EventEmitter = new events.EventEmitter();
-//const EventEmitter = require('events').EventEmitter;
 
 const robot = require("robotjs");
-//var  ks = require('node-key-sender');
 robot.setKeyboardDelay(0);
-
 
 const keys = {
   a: "space",
@@ -37,6 +34,7 @@ const buttons = {
   left: false,
   right: false
 };
+
 const buttons_last = JSON.parse(JSON.stringify(buttons));
 
 const product = {
@@ -74,16 +72,13 @@ hid.on("data", function(data) {
     // 4 UP && DOWN
     // 5 Y && X && A && B
     // 6 Start && Select && L && R
-
+    
     for (const [key, value] of Object.entries(values)) {
-      //console.log(key, value);
-      //console.log(value.data)
       if(value.values.indexOf(data[value.data]) !== -1) {
         buttons[key] = true;
       } else {
         buttons[key] = false;
       }
-
     }
 
     for (const [key] of Object.entries(values)) {
@@ -95,11 +90,8 @@ hid.on("data", function(data) {
         }
         buttons_last[key] = buttons[key];
       }
-
     }
   });
-
-
 
   for (const [key, value] of Object.entries(keys)) {
     EventEmitter.on(key , function(state) {
