@@ -7,7 +7,7 @@ Platforms like Stadia don't allow other controllers. But they allow keyboard so 
 It can also be used outside of a gaming platform.
 
 # Product emulate
-Test in https://gamepad-tester.com/
+Test in https://apps.nektro.net/gamepad/ or https://greggman.github.io/html5-gamepad-test/  
 - usb gamepad (Vendor: 0810 Product: e501)
 
 ![](https://github.com/jerosoler/snes-gamepad2keyboard/raw/master/docs/snesusb.jpg)
